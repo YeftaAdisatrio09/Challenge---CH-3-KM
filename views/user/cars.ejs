@@ -6,7 +6,7 @@
     </ul>
     <div class="d-flex justify-content-between">
         <h4><b>List Car</b></h4>
-        <a class="btn btn-primary" style="background-color: #0d28a6">Add New Car</a>
+        <a href="cars/add" class="btn btn-primary" style="background-color: #0d28a6">Add New Car</a>
     </div>
 
     <div class="contentCars">
@@ -16,8 +16,6 @@
             <button type="button" class="btn btn-outline-primary mr-2">Medium</button>
             <button type="button" class="btn btn-outline-primary mr-2">Large</button>
         </div>
-        <div class="row">
-            <div class="col-4"><% for(let=i=0; i<=6; i++){ %> <%- include('../partials/carCard') %> <%} %></div>
-        </div>
+        <div class="row"><% for(let i=0; i<=10; i++){ %> <%- include('../partials/carCard') %> <%} %></div>
     </div>
 </section>

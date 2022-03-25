@@ -5,7 +5,7 @@
 }
 
 p {
-    font-size: 12px;
+    font-size: 14pt;
 }
 
 body {
@@ -14,9 +14,22 @@ body {
 }
 
 #sideFix {
-    width: 70px;
+    width: 100px;
     height: 100vh;
     background-color: #0d28a6;
+    .text-light {
+        img {
+            width: 30px;
+            margin-right: auto !important;
+            margin-left: auto !important;
+        }
+        a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 11pt;
+            margin-bottom: 20px;
+        }
+    }
 }
 
 #sidebar {
@@ -49,11 +62,37 @@ body {
     }
 }
 
+//cars
 .contentCars {
     .bg-light {
+        margin: 15px 1px;
         padding: 20px;
-        label {
-            width: 30%;
+        .form-group {
+            margin-bottom: 15px;
+            label {
+                width: 30%;
+            }
+        }
+        small {
+            margin-left: 23%;
         }
     }
+    .button {
+        position: fixed;
+        bottom: 0;
+        margin-left: 10px;
+        margin-bottom: 15px;
+    }
+}
+
+#message {
+    position: absolute;
+    margin-right: 100px;
+    z-index: 99;
+}
+
+.alert {
+    margin-top: 50px;
+    margin-left: 250px;
+    width: 500px;
 }
