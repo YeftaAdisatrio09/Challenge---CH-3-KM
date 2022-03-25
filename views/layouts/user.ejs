@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bootstrap 5 Side Bar Navigation</title>
+        <!-- bootstrap 5 css -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous" />
+        <!-- custom css -->
+        <link rel="stylesheet" href="/css/style.css" />
+    </head>
+
+    <body>
+        <div class="row g-0">
+            <div class="col-3">
+                <div class="d-flex">
+                    <div id="sideFix">
+                        <div class="text-center pt-4 text-light">
+                            <p class="mb-4">Logo</p>
+                            <div>
+                                <img src="/img/fi_home.png" alt="" />
+                                <a href="user/dashboard">Dashboard</a>
+                            </div>
+                            <div>
+                                <img src="/img/fi_truck.png" alt="" />
+                                <p>Cars</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="sidebar">
+                        <h3 class="text-center pt-3">Name Logo</h3>
+                        <h4 class="ml-4">Dashboard</h4>
+                        <div class="w-auto p-2" style="background-color: #cfd4ed">
+                            <a href="#" class="ml-4">About</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <nav class="navbar navbar-light bg-light d-flex">
+                    <img src="/img/fi_menu.png" class="mr-auto" id="menu-btn" />
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-outline-primary" type="submit">Search</button>
+                    </form>
+                    <img src="/img/Frame 33.png" class="ml-3" />
+                </nav>
+
+                <%- body %>
+            </div>
+        </div>
+
+        <!-- bootstrap js -->
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.min.js" integrity="sha384-5h4UG+6GOuV9qXh6HqOLwZMY4mnLPraeTrjT5v07o347pj6IkfuoASuGBhfDsp3d" crossorigin="anonymous"></script>
+        <!-- custom js -->
+    </body>
+</html>
